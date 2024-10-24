@@ -1,0 +1,80 @@
+$default-w: 25vw;
+$default-fontsize: 1.3rem;
+$hover-fontsize: 1.5rem;
+
+$blue: #1d365b;
+$grey: rgba(66, 65, 71, 1) 0%;
+$mid-grey: rgba(110, 120, 122, 1);
+$light-grey: rgba(197, 199, 199, 1) 100%;
+$header-bg: linear-gradient(110deg, $grey, $light-grey, $mid-grey);
+
+.homeSectionCard {
+  width: $default-w;
+  align-content: center;
+  border: 2px solid $blue;
+  box-shadow: 5px 5px;
+  border-radius: 10px;
+  font-size: $default-fontsize;
+  background-color: #fff;
+  animation: out 0.2s;
+  padding: 3rem;
+
+  h3,
+  span {
+    text-decoration: none;
+  }
+
+  span {
+    border: 1px solid $blue;
+    border-radius: 100%;
+    padding: 5px 8px;
+  }
+
+  .sectionName {
+    text-transform: capitalize;
+  }
+
+  &:hover {
+
+    animation: in 0.2s;
+    background-color: $mid-grey;
+    color: #fff;
+    font-size: $hover-fontsize;
+    box-shadow: 5px 5px;
+
+    span {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px 8px;
+    }
+  }
+
+  @keyframes in {
+    from {
+      width: $default-w;
+      background-color: $header-bg;
+      color: $blue;
+      font-size: $default-fontsize;
+    }
+    to {
+      font-size: $hover-fontsize;
+      background-color: $mid-grey;
+      color: $mid-grey;
+    }
+  }
+
+  @keyframes out {
+    from {
+      font-size: $hover-fontsize;
+      background-color: $mid-grey;
+      color: $mid-grey;
+    }
+
+    to {
+      width: $default-w;
+      background-color: #fff;
+      color: $blue;
+      font-size: $default-fontsize;
+    }
+  }
+}

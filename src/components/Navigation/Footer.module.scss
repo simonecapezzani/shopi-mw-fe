@@ -1,0 +1,26 @@
+$grey: rgba(66, 65, 71, 1) 0%;
+$mid-grey: rgba(110, 120, 122, 1) 35%;
+$light-grey: rgba(197, 199, 199, 1) 100%;
+$footer-bg: linear-gradient(110deg, $grey, $mid-grey, $light-grey );
+
+.footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5vh;
+  display: flex;
+  padding: 0 2rem;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  justify-content: end;
+  background: $footer-bg;
+
+  span {
+    color: $grey;
+  }
+
+  .logo{
+    max-height: 5vh;
+  }
+}

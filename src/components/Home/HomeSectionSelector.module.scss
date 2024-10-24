@@ -1,0 +1,18 @@
+$blue: #1d365b;
+
+.homeSelectorContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    height: 200%;
+
+    .navCard{
+        text-decoration: none;
+        color: $blue;
+        flex: 0 0 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
